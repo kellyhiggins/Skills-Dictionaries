@@ -1,0 +1,35 @@
+<!-- <!doctype html> -->
+{ % extends 'base.html' % }
+<!-- <html> -->
+<!-- <head> -->
+    { % block title % }Skills-Web{ % endblock % }
+    <!-- <title>Skills-Web</title> -->
+
+    { % block css % }
+    <!-- <link rel="stylesheet" href="/static/styles.css"> -->
+<!-- </head> -->
+<!-- <body> -->
+{ % block body % }
+    <h1>Totally Awesome Job Search</h1>
+    <p>Please fill out this form so that our magic kittens can assess the opportunities in your totally wonderful future. Magic kittens are awe-inspiring, have you ever met one? If you haven't, you are in luck, because they are a HUGE part of our interview process.</p>
+    <form action="/application" method="POST">
+        <label>First Name:
+            <input type="text" name="firstname"><br>
+        </label>
+        <label>Last Name:
+            <input id="last" type="text" name="lastname"><br>
+        </label>
+        <label>Salary Requirement:
+            <input type="text" name="salary"><br>
+        </label>
+        Job Applying for:
+        <select name="jobtitle">
+            <label><option value="softwareengineer">Software Engineer</option></label>
+            <label><option value="qaengineer">QA Engineer</option></label>
+            <label><option value="productmanager">Product Manager</option></label>
+        </select><br>
+        <input type="submit">
+    </form>
+    { % endblock %}
+<!-- </body> -->
+<!-- </html> -->

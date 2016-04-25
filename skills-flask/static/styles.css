@@ -1,0 +1,15 @@
+/* Your styles can go here. */
+
+p {
+    border-width: 2px;
+    border-style: solid;
+    border-color: turquoise;
+}
+
+input {
+    background-color: yellow;
+}
+
+#last {
+    font-weight: bold;
+}
